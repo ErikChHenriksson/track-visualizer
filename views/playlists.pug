@@ -1,0 +1,11 @@
+extends layout.pug
+
+block content
+  h1="My playlists"
+  ul
+    each playlist in playlists
+      li(onclick="location.href='/playlists/" + playlist.id + "'")=playlist.name
+        
+block footer
+  ul(class='footer')
+    li(onclick="location.href='/logout'")='Log out'

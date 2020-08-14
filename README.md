@@ -1,2 +1,8 @@
 # track-visualizer
-Uses Spotify API, WebAudio, musixmatch API and anychart to create visualizations of the tracks you have saved in your Spotify playlists
+
+This spotify API based track-visualizer will show you oscilloscopes, frequency bars and lyric based word clouds, all based on the songs in your Spotify playlists.
+
+The oscilloscopes and frequency bars will be drawn using the audio analyzed through webAudio and getDisplayMedia. The lyrics are fetched from the musixmatch API and will be used to generate a word cloud using anychart.
+
+
+  

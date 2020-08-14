@@ -1,0 +1,116 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1db954;
+  background-color: #000;
+  overflow-x: hidden;
+}
+.center {
+  place-items: center;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 70vw;
+}
+ul.footer {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 40vw;
+}
+ul.footer li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.less-padding {
+  padding-top: 20px;
+}
+.hidden_data {
+  display: none;
+}
+li {
+  text-align: center;
+  padding: 4px 39px;
+  width: 100%;
+  background: #535353;
+  color: #1db954;
+  font-size: 20px;
+}
+li:nth-child(even) {
+  background: #212121;
+}
+li:first-child {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+li:last-child {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+li:hover {
+  cursor: pointer;
+  color: #1ed760;
+  background: #838383;
+}
+li a {
+  color: #fff;
+}
+form {
+  margin: 0;
+}
+input {
+  background-color: inherit;
+  border: none;
+}
+iframe {
+  display: block;
+  align-self: center;
+  margin-top: 20px;
+}
+h1 {
+  color: #1ed760;
+  margin-top: 10vh;
+}
+h2 {
+  text-align: center;
+}
+h4 {
+  max-width: 400px;
+  text-align: center;
+}
+.login_link {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #1ed760;
+  color: #fff;
+  padding: 5px 80px;
+  border-radius: 50px;
+}
+.login_link:hover {
+  background-color: #2ee770;
+  color: #fff;
+}
+#lyrics_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+iframe .af {
+  background-color: rgb(211, 50, 50);
+}
+#visualizer_part {
+  display: flex;
+  justify-content: center;
+}
+#tag_cloud {
+  width: 100vw;
+  height: 60vh;
+}

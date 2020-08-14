@@ -1,0 +1,18 @@
+extends layout.pug
+block scripts
+  script(src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js")
+  script(src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js")
+  script(src="../static/bundle.js")
+
+block content
+  div(id='lyrics_page')
+    canvas(id="oscilloscope" width="640" height="0")
+    if lyrics
+      div(id='tag_cloud' data-title=song_title data-lyrics=lyrics)
+    canvas(id="frequency_bars" width="1024" height="0")
+    iframe(id='spotify_player' src='https://open.spotify.com/embed/track/'+track_id width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media")
+        
+block footer
+  ul(class='footer less-padding')
+    li(onclick="location.href='/playlists/" + playlist_id + "'")='Back to playlists'
+    li(onclick="location.href='/logout'")='Log out'

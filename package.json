@@ -1,0 +1,32 @@
+{
+  "name": "my-glitch-app",
+  "version": "0.0.1",
+  "description": "What am I about?",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "spotify-web-api-node": "^4.0.0",
+    "pug": "^3.0.0",
+    "express-session": "^1.17.1",
+    "node-fetch": "^2.6.0",
+    "body-parser": "^1.19.0",
+    "microphone-stream": "^5.0.1",
+    "requirejs": "^2.3.6",
+    "browserify": "^16.5.2"
+  },
+  "engines": {
+    "node": "10.15"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/welcome-project"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
