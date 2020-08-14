@@ -1,0 +1,17 @@
+extends layout.pug
+
+block content
+  h1=name
+  ul
+    each track in tracks
+      li(onclick="this.getElementsByTagName('input')[3].click()")
+        form(name="tracklink",method='post')
+          input(type="text" class="hidden_data" name="track_id" value=track.track.id)
+          input(type="text" class="hidden_data" name="artist_name" value=track.track.artists[0].name)
+          input(type="text" class="hidden_data" name="song_title" value=track.track.name)
+          input(type="submit" value=track.track.artists[0].name + ' - ' + track.track.name)
+        
+block footer
+  ul(class='footer')
+    li(onclick="location.href='/playlists'")='Back to playlists'
+    li(onclick="location.href='/logout'")='Log out'
